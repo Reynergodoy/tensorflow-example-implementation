@@ -9,6 +9,7 @@ function parameters (inputShape, kernelSize, filters, strides, activation, kerne
         activation,
         kernelInitializer
      }
+}
 
 function addConvLayer (model, params) {
     if (params.inputShape === 0) {
@@ -63,3 +64,5 @@ const optimizer = tf.train.sgd(0.15); // utilizes a stochastic gradient descent 
 
 /* Compile the model */
 compileModel(model, optimizer, 'categoricalCrossentropy', ['accuracy']);
+
+     
