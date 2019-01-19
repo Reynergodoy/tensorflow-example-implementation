@@ -53,7 +53,7 @@ addConvLayer(model, parameters(0, 5, 16, 1, 'relu', 'VarianceScaling'))
 
 addPoolingLayer(model, [2,2], [2,2]);
 
-flatten();
+flatten(model);
 
 /* Adds a fully connected layer with softmax activation function and a variance
 scaling initialization */
